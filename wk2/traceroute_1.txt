@@ -1,0 +1,16 @@
+root@lamp-s-1vcpu-1gb-tor1-01:~# traceroute 139.130.4.5
+traceroute to 139.130.4.5 (139.130.4.5), 30 hops max, 60 byte packets
+ 1  * * *
+ 2  10.78.4.0 (10.78.4.0)  4.868 ms 10.78.4.4 (10.78.4.4)  2.552 ms 10.78.4.6 (10.78.4.6)  2.561 ms
+ 3  138.197.249.82 (138.197.249.82)  2.548 ms 138.197.249.86 (138.197.249.86)  3.240 ms 138.197.249.90 (138.197.249.90)  3.226 ms
+ 4  ix-ae-12-0.tcore1.tnk-toronto.as6453.net (64.86.33.53)  3.181 ms  2.600 ms ix-ae-4-0.tcore2.tnk-toronto.as6453.net (63.243.172.33)  2.582 ms
+ 5  if-ae-8-2.tcore1.ct8-chicago.as6453.net (66.110.48.2)  67.394 ms  68.237 ms if-ae-2-2.tcore2.tnk-toronto.as6453.net (64.86.33.90)  63.049 ms
+ 6  if-ae-52-55.tcore2.sqn-san-jose.as6453.net (63.243.129.21)  63.182 ms if-ae-8-2.tcore1.ct8-chicago.as6453.net (66.110.48.2)  65.751 ms  65.761 ms
+ 7  if-ae-29-2.tcore2.sqn-san-jose.as6453.net (64.86.21.104)  65.809 ms if-ae-1-2.tcore1.sqn-san-jose.as6453.net (63.243.205.1)  60.771 ms if-ae-52-55.tcore2.sqn-san-jose.as6453.net (63.243.129.21)  60.928 ms
+ 8  if-ae-1-2.tcore1.sqn-san-jose.as6453.net (63.243.205.1)  65.621 ms  60.653 ms i-0-0-0-17-peer.eqnx03.pr.telstraglobal.net (134.159.63.101)  94.466 ms
+ 9  i-92.eqnx-core02.telstraglobal.net (202.84.247.18)  63.431 ms  67.699 ms  61.210 ms
+10  i-20208.sydp-core04.telstraglobal.net (202.84.141.26)  197.146 ms i-92.eqnx-core02.telstraglobal.net (202.84.247.18)  62.810 ms  62.754 ms
+11  i-20208.sydp-core04.telstraglobal.net (202.84.141.26)  197.122 ms  196.891 ms bundle-ether3.pad-gw11.sydney.telstra.net (203.50.13.89)  197.810 ms
+12  bundle-ether3.ken-core10.sydney.telstra.net (203.50.6.60)  201.892 ms bundle-ether3.pad-gw11.sydney.telstra.net (203.50.13.89)  202.334 ms  197.696 ms
+13  bundle-ether3.ken-core10.sydney.telstra.net (203.50.6.60)  197.715 ms  201.704 ms  203.671 ms
+14  bundle-ether2.ken-ncprouter101.sydney.telstra.net (203.50.11.221)  197.534 ms 139.130.4.5 (139.130.4.5)  200.909 ms bundle-ether2.ken-ncprouter101.sydney.telstra.net (203.50.11.221)  200.967 ms

@@ -1,0 +1,17 @@
+root@lamp-s-1vcpu-1gb-tor1-01:~# ping 139.130.4.5 -w 10
+PING 139.130.4.5 (139.130.4.5) 56(84) bytes of data.
+64 bytes from 139.130.4.5: icmp_seq=1 ttl=243 time=196 ms
+64 bytes from 139.130.4.5: icmp_seq=2 ttl=243 time=195 ms
+64 bytes from 139.130.4.5: icmp_seq=3 ttl=243 time=195 ms
+64 bytes from 139.130.4.5: icmp_seq=4 ttl=243 time=195 ms
+64 bytes from 139.130.4.5: icmp_seq=5 ttl=243 time=195 ms
+64 bytes from 139.130.4.5: icmp_seq=6 ttl=243 time=195 ms
+64 bytes from 139.130.4.5: icmp_seq=7 ttl=243 time=195 ms
+64 bytes from 139.130.4.5: icmp_seq=8 ttl=243 time=195 ms
+64 bytes from 139.130.4.5: icmp_seq=9 ttl=243 time=195 ms
+64 bytes from 139.130.4.5: icmp_seq=10 ttl=243 time=195 ms
+
+--- 139.130.4.5 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9014ms
+rtt min/avg/max/mdev = 195.476/195.730/196.692/0.648 ms
+root@lamp-s-1vcpu-1gb-tor1-01:~#

@@ -1,0 +1,233 @@
+====================================   WHOIS 1  =================================================================
+
+Domain Information
+Name: youtube.com
+Registry Domain ID: 142504053_DOMAIN_COM-VRSN
+Domain Status:
+clientDeleteProhibited
+clientTransferProhibited
+clientUpdateProhibited
+serverDeleteProhibited
+serverTransferProhibited
+serverUpdateProhibited
+Nameservers:
+ns1.google.com
+
+ns2.google.com
+
+ns3.google.com
+
+ns4.google.com
+
+Dates
+Registry Expiration: 2021-02-15 05:13:12 UTC
+Registrar Expiration: 2021-02-14 08:00:00 UTC
+Created: 2005-02-15 05:13:12 UTC
+Contact Information
+Registrant:
+Organization: Google LLC
+Mailing Address: CA, US
+Technical:
+Mailing Address: CA, US
+Administrative:
+Mailing Address: CA, US
+Redacted for privacy: some of the data in this object has been removed.
+
+Registrar Information
+Name: MarkMonitor Inc.
+IANA ID: 292
+Abuse Contact Email: abusecomplaints@markmonitor.com
+Abuse Contact Phone: +1.2083895770
+DNSSEC Information
+Delegation Signed: Unsigned
+Authoritative Servers
+Registry Server URL: https://rdap-core.vrsn.com/com/v1/domain/youtube.com
+Last updated from Registry RDAP DB: 2020-01-15 06:45:09 UTC
+Registrar Server URL: https://rdap.markmonitor.com/rdap/domain/YOUTUBE.COM
+Last updated from Registrar RDAP DB: 2020-01-15 12:27:57 UTC
+
+====================================   WHOIS 2    =================================================================
+
+Domain Information
+Name: reddit.com
+Registry Domain ID: 153584275_DOMAIN_COM-VRSN
+Domain Status:
+clientDeleteProhibited
+clientTransferProhibited
+clientUpdateProhibited
+serverDeleteProhibited
+serverTransferProhibited
+serverUpdateProhibited
+Nameservers:
+ns-1029.awsdns-00.org
+
+ns-1887.awsdns-43.co.uk
+
+ns-378.awsdns-47.com
+
+ns-557.awsdns-05.net
+
+Dates
+Registry Expiration: 2020-04-29 17:59:19 UTC
+Registrar Expiration: 2020-04-29 17:59:19 UTC
+Created: 2005-04-29 17:59:19 UTC
+Contact Information
+Registrant:
+Organization: Reddit Inc.
+Mailing Address: CA, US
+Technical:
+Mailing Address: CA, US
+Administrative:
+Mailing Address: CA, US
+Redacted for privacy: some of the data in this object has been removed.
+
+Registrar Information
+Name: MarkMonitor Inc.
+IANA ID: 292
+Abuse Contact Email: abusecomplaints@markmonitor.com
+Abuse Contact Phone: +1.2083895770
+DNSSEC Information
+Delegation Signed: Unsigned
+Authoritative Servers
+Registry Server URL: https://rdap-core.vrsn.com/com/v1/domain/reddit.com
+Last updated from Registry RDAP DB: 2020-01-15 06:46:11 UTC
+Registrar Server URL: https://rdap.markmonitor.com/rdap/domain/REDDIT.COM
+Last updated from Registrar RDAP DB: 2020-01-15 12:29:00 UTC
+
+====================================   WHOIS 3    =================================================================
+
+Domain Information
+Name: BBC.COM
+Internationalized Domain Name: BBC.COM
+Registry Domain ID: 4794897_DOMAIN_COM-VRSN
+Domain Status:
+clientTransferProhibited
+clientUpdateProhibited
+serverDeleteProhibited
+serverTransferProhibited
+Nameservers:
+ns3.bbc.co.uk
+
+ns4.bbc.co.uk
+
+ns4.bbc.net.uk
+
+ns3.bbc.net.uk
+
+Dates
+Registry Expiration: 2020-07-14 04:00:00 UTC
+Registrar Expiration: 2020-07-14 04:00:00 UTC
+Created: 1989-07-15 04:00:00 UTC
+Contact Information
+Registrant:
+Mailing Address: GB
+Technical:
+Billing:
+Admin:
+Registrar Information
+Name: TUCOWS, INC.
+Abuse Contact Email: domainabuse@tucows.com
+Abuse Contact Phone: tel:+1.4165350123
+DNSSEC Information
+Delegation Signed: Unsigned
+Authoritative Servers
+Registry Server URL: https://rdap-core.vrsn.com/com/v1/domain/bbc.com
+Last updated from Registry RDAP DB: 2020-01-15 06:46:11 UTC
+Registrar Server URL: https://opensrs.rdap.tucows.com/domain/BBC.COM
+Last updated from Registrar RDAP DB: 2019-06-15 01:12:04 UTC
+
+====================================   WHOIS 4    =================================================================
+
+Domain Information
+Name: netflix.com
+Registry Domain ID: 1404215_DOMAIN_COM-VRSN
+Domain Status:
+clientDeleteProhibited
+clientTransferProhibited
+clientUpdateProhibited
+serverDeleteProhibited
+serverTransferProhibited
+serverUpdateProhibited
+Nameservers:
+ns-1372.awsdns-43.org
+
+ns-1984.awsdns-56.co.uk
+
+ns-659.awsdns-18.net
+
+ns-81.awsdns-10.com
+
+Dates
+Registry Expiration: 2021-11-10 05:00:00 UTC
+Registrar Expiration: 2021-11-09 08:00:00 UTC
+Created: 1997-11-11 05:00:00 UTC
+Contact Information
+Registrant:
+Name: Domain Administrator
+Organization: Netflix, Inc.
+Email: nicadmin@netflix.com
+Tel: +1.4085403700
+Fax: +1.4085403737
+Mailing Address: 100 Winchester Circle, Los Gatos, CA, 95032, US
+Technical:
+Name: Domain Administrator
+Organization: Netflix, Inc.
+Email: nicadmin@netflix.com
+Tel: +1.4085403700
+Fax: +1.4085403737
+Mailing Address: 100 Winchester Circle, Los Gatos, CA, 95032, US
+Administrative:
+Name: Domain Administrator
+Organization: Netflix, Inc.
+Email: nicadmin@netflix.com
+Tel: +1.4085403700
+Fax: +1.4085403737
+Mailing Address: 100 Winchester Circle, Los Gatos, CA, 95032, US
+Registrar Information
+Name: MarkMonitor Inc.
+IANA ID: 292
+Abuse Contact Email: abusecomplaints@markmonitor.com
+Abuse Contact Phone: +1.2083895770
+DNSSEC Information
+Delegation Signed: Unsigned
+Authoritative Servers
+Registry Server URL: https://rdap-core.vrsn.com/com/v1/domain/netflix.com
+Last updated from Registry RDAP DB: 2020-01-15 06:45:09 UTC
+Registrar Server URL: https://rdap.markmonitor.com/rdap/domain/NETFLIX.COM
+Last updated from Registrar RDAP DB: 2020-01-15 12:32:16 UTC
+
+====================================   WHOIS 5    =================================================================
+
+Domain Information
+Name: NBA.COM
+Registry Domain ID: 966915_DOMAIN_COM-VRSN
+Domain Status:
+clientTransferProhibited
+Nameservers:
+A1-148.AKAM.NET
+
+A12-65.AKAM.NET
+
+A16-64.AKAM.NET
+
+A18-65.AKAM.NET
+
+A5-65.AKAM.NET
+
+A7-67.AKAM.NET
+
+Dates
+Registry Expiration: 2020-11-27 05:00:00 UTC
+Created: 1994-11-28 05:00:00 UTC
+Registrar Information
+Name: CSC Corporate Domains, Inc.
+IANA ID: 299
+Abuse Contact Email: domainabuse@cscglobal.com
+Abuse Contact Phone: tel:8887802723
+DNSSEC Information
+Delegation Signed: Unsigned
+Authoritative Servers
+Registry Server URL: https://rdap-core.vrsn.com/com/v1/domain/nba.com
+Last updated from Registry RDAP DB: 2020-01-15 06:46:11 UTC
+
+

@@ -1,0 +1,72 @@
+****************************************    NMAP 1    *********************************************************
+root@lamp-s-1vcpu-1gb-tor1-01:~# nmap 1.1.1.1
+
+root@lamp-s-1vcpu-1gb-tor1-01:~# nmap 8.8.8.8 1.1.1.1
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2020-01-15 18:11 UTC
+Nmap scan report for dns.google (8.8.8.8)
+Host is up (0.0010s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+53/tcp  open  domain
+443/tcp open  https
+
+Nmap scan report for one.one.one.one (1.1.1.1)
+Host is up (0.00072s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+53/tcp  open  domain
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 2 IP addresses (2 hosts up) scanned in 27.55 seconds
+
+****************************************    NMAP 2    *********************************************************
+
+root@lamp-s-1vcpu-1gb-tor1-01:~# nmap -p 80 8.8.4.4
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2020-01-15 18:13 UTC
+Nmap scan report for dns.google (8.8.4.4)
+Host is up (0.0017s latency).
+
+PORT   STATE    SERVICE
+80/tcp filtered http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.50 seconds
+
+****************************************    NMAP 3    *********************************************************
+
+root@lamp-s-1vcpu-1gb-tor1-01:~# nmap -p 0-1000 139.130.4.5
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2020-01-15 18:14 UTC
+Nmap scan report for 139.130.4.5
+Host is up (0.20s latency).
+Not shown: 1000 closed ports
+PORT  STATE    SERVICE
+0/tcp filtered unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 4.20 seconds
+
+****************************************    NMAP 4    *********************************************************
+
+root@lamp-s-1vcpu-1gb-tor1-01:~# nmap -F reddit.com
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2020-01-15 18:17 UTC
+Nmap scan report for reddit.com (151.101.65.140)
+Host is up (0.0012s latency).
+Other addresses for reddit.com (not scanned): 151.101.1.140 151.101.193.140 151.101.129.140
+Not shown: 98 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 2.19 seconds
+
+
+
+
+
+
+
+
+
