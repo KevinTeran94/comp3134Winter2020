@@ -1,0 +1,556 @@
+root@lamp-s-1vcpu-1gb-tor1-01:~# clear
+root@lamp-s-1vcpu-1gb-tor1-01:~# tcpdump -i eth0 tcp
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+20:32:16.491272 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 3288768856:3288768964, ack 76508819, win 1452, length 108
+20:32:16.491386 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 108:144, ack 1, win 1452, length 36
+20:32:16.491480 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 144:252, ack 1, win 1452, length 108
+20:32:16.491550 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 252:288, ack 1, win 1452, length 36
+20:32:16.493674 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 288:508, ack 1, win 1452, length 220
+20:32:16.493764 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 508:544, ack 1, win 1452, length 36
+20:32:16.493868 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 544:748, ack 1, win 1452, length 204
+20:32:16.493942 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 748:784, ack 1, win 1452, length 36
+20:32:16.494037 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 784:988, ack 1, win 1452, length 204
+20:32:16.499550 IP 95.179.140.193.vultr.com.52984 > lamp-s-1vcpu-1gb-tor1-01.6935: Flags [SEW], seq 1413847951, win 29200, options [mss 1460,sackOK,TS val 224935265 ecr 0,nop,wscale 7], length 0
+20:32:16.501484 IP 95.179.140.193.vultr.com.36632 > lamp-s-1vcpu-1gb-tor1-01.52304: Flags [SEW], seq 3932666252, win 29200, options [mss 1460,sackOK,TS val 224935268 ecr 0,nop,wscale 7], length 0
+20:32:16.516781 IP 95.179.140.193.vultr.com.60926 > lamp-s-1vcpu-1gb-tor1-01.40191: Flags [SEW], seq 3889566901, win 29200, options [mss 1460,sackOK,TS val 224935277 ecr 0,nop,wscale 7], length 0
+20:32:16.517534 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 108, win 4114, length 0
+20:32:16.517582 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 988:2464, ack 1, win 1452, length 1476
+20:32:16.517614 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 988, win 4117, length 0
+20:32:16.534930 IP 95.179.140.193.vultr.com.34478 > lamp-s-1vcpu-1gb-tor1-01.27054: Flags [SEW], seq 2865740893, win 29200, options [mss 1460,sackOK,TS val 224935301 ecr 0,nop,wscale 7], length 0
+20:32:16.593095 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 2728:2964, ack 1, win 1452, length 236
+20:32:16.593328 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 3000:3236, ack 1, win 1452, length 236
+20:32:16.593502 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 3272:3460, ack 1, win 1452, length 188
+20:32:16.593672 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 3496:3700, ack 1, win 1452, length 204
+20:32:16.593833 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 3736:3924, ack 1, win 1452, length 188
+20:32:16.594006 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 3960:4196, ack 1, win 1452, length 236
+20:32:16.594287 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 4232:4436, ack 1, win 1452, length 204
+20:32:16.594468 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 4472:4676, ack 1, win 1452, length 204
+20:32:16.594639 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 4712:4916, ack 1, win 1452, length 204
+20:32:16.594859 IP 95.179.140.193.vultr.com.49322 > lamp-s-1vcpu-1gb-tor1-01.43412: Flags [SEW], seq 180302133, win 29200, options [mss 1460,sackOK,TS val 224935361 ecr 0,nop,wscale 7], length 0
+20:32:16.609357 IP 95.179.140.193.vultr.com.40384 > lamp-s-1vcpu-1gb-tor1-01.49410: Flags [S], seq 1659399847, win 29200, options [mss 1460,sackOK,TS val 224935375 ecr 0,nop,wscale 7], length 0
+20:32:16.609483 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 2964, win 4115, length 0
+20:32:16.609528 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 4952:6656, ack 1, win 1452, length 1704
+20:32:16.609556 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 3000, win 4115, length 0
+20:32:16.609565 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 4916, win 4117, length 0
+20:32:16.609706 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 6656:6884, ack 1, win 1452, length 228
+20:32:16.609787 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 6884:6920, ack 1, win 1452, length 36
+20:32:16.609880 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 6920:7108, ack 1, win 1452, length 188
+20:32:16.610032 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 7144:7348, ack 1, win 1452, length 204
+20:32:16.610166 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 7384:7572, ack 1, win 1452, length 188
+20:32:16.610344 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 7608:7796, ack 1, win 1452, length 188
+20:32:16.610497 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 7832:8036, ack 1, win 1452, length 204
+20:32:16.610662 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 8072:8276, ack 1, win 1452, length 204
+20:32:16.610812 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 8312:8516, ack 1, win 1452, length 204
+20:32:16.610961 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 8552:8756, ack 1, win 1452, length 204
+20:32:16.611109 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 8792:8996, ack 1, win 1452, length 204
+20:32:16.611257 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 9032:9236, ack 1, win 1452, length 204
+20:32:16.611402 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 9272:9476, ack 1, win 1452, length 204
+20:32:16.611554 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 9512:9716, ack 1, win 1452, length 204
+20:32:16.611705 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 9752:9956, ack 1, win 1452, length 204
+20:32:16.611855 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 9992:10196, ack 1, win 1452, length 204
+20:32:16.612005 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 10232:10436, ack 1, win 1452, length 204
+20:32:16.612156 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 10472:10676, ack 1, win 1452, length 204
+20:32:16.612299 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 10712:10916, ack 1, win 1452, length 204
+20:32:16.615578 IP 95.179.140.193.vultr.com.46076 > lamp-s-1vcpu-1gb-tor1-01.41414: Flags [S], seq 1656859403, win 29200, options [mss 1460,sackOK,TS val 224935376 ecr 0,nop,wscale 7], length 0
+20:32:16.617541 IP 95.179.140.193.vultr.com.49814 > lamp-s-1vcpu-1gb-tor1-01.54681: Flags [SEW], seq 1501304550, win 29200, options [mss 1460,sackOK,TS val 224935381 ecr 0,nop,wscale 7], length 0
+20:32:16.618020 IP 95.179.140.193.vultr.com.49496 > lamp-s-1vcpu-1gb-tor1-01.18923: Flags [SEW], seq 1673828353, win 29200, options [mss 1460,sackOK,TS val 224935384 ecr 0,nop,wscale 7], length 0
+20:32:16.622378 IP 95.179.140.193.vultr.com.51470 > lamp-s-1vcpu-1gb-tor1-01.10893: Flags [SEW], seq 3487760870, win 29200, options [mss 1460,sackOK,TS val 224935388 ecr 0,nop,wscale 7], length 0
+20:32:16.628869 IP 95.179.140.193.vultr.com.43426 > lamp-s-1vcpu-1gb-tor1-01.376: Flags [SEW], seq 663796692, win 29200, options [mss 1460,sackOK,TS val 224935389 ecr 0,nop,wscale 7], length 0
+20:32:16.631096 IP 95.179.140.193.vultr.com.39324 > lamp-s-1vcpu-1gb-tor1-01.49413: Flags [SEW], seq 3338566806, win 29200, options [mss 1460,sackOK,TS val 224935397 ecr 0,nop,wscale 7], length 0
+20:32:16.634635 IP 95.179.140.193.vultr.com.51670 > lamp-s-1vcpu-1gb-tor1-01.54683: Flags [SEW], seq 89671209, win 29200, options [mss 1460,sackOK,TS val 224935401 ecr 0,nop,wscale 7], length 0
+20:32:16.635186 IP 95.179.140.193.vultr.com.51484 > lamp-s-1vcpu-1gb-tor1-01.29734: Flags [SEW], seq 397762313, win 29200, options [mss 1460,sackOK,TS val 224935401 ecr 0,nop,wscale 7], length 0
+20:32:16.640416 IP 95.179.140.193.vultr.com.51350 > lamp-s-1vcpu-1gb-tor1-01.13386: Flags [SEW], seq 4058151333, win 29200, options [mss 1460,sackOK,TS val 224935403 ecr 0,nop,wscale 7], length 0
+20:32:16.641217 IP 95.179.140.193.vultr.com.45740 > lamp-s-1vcpu-1gb-tor1-01.53275: Flags [SEW], seq 392352349, win 29200, options [mss 1460,sackOK,TS val 224935407 ecr 0,nop,wscale 7], length 0
+20:32:16.643250 IP 95.179.140.193.vultr.com.41652 > lamp-s-1vcpu-1gb-tor1-01.21958: Flags [S], seq 2236660827, win 29200, options [mss 1460,sackOK,TS val 224935409 ecr 0,nop,wscale 7], length 0
+20:32:16.643737 IP 95.179.140.193.vultr.com.60412 > lamp-s-1vcpu-1gb-tor1-01.38950: Flags [SEW], seq 4165089762, win 29200, options [mss 1460,sackOK,TS val 224935403 ecr 0,nop,wscale 7], length 0
+20:32:16.646720 IP 95.179.140.193.vultr.com.40162 > lamp-s-1vcpu-1gb-tor1-01.27457: Flags [S], seq 2305052767, win 29200, options [mss 1460,sackOK,TS val 224935407 ecr 0,nop,wscale 7], length 0
+20:32:16.647135 IP 95.179.140.193.vultr.com.37434 > lamp-s-1vcpu-1gb-tor1-01.20985: Flags [S], seq 2880702043, win 29200, options [mss 1460,sackOK,TS val 224935407 ecr 0,nop,wscale 7], length 0
+20:32:16.647206 IP 95.179.140.193.vultr.com.33284 > lamp-s-1vcpu-1gb-tor1-01.25488: Flags [SEW], seq 397538475, win 29200, options [mss 1460,sackOK,TS val 224935413 ecr 0,nop,wscale 7], length 0
+20:32:16.648441 IP 95.179.140.193.vultr.com.52638 > lamp-s-1vcpu-1gb-tor1-01.32688: Flags [S], seq 1276652395, win 29200, options [mss 1460,sackOK,TS val 224935408 ecr 0,nop,wscale 7], length 0
+20:32:16.656345 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 7608, win 4117, length 0
+20:32:16.656410 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [.], seq 10952:13872, ack 1, win 1452, length 2920
+20:32:16.656441 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 13872:16316, ack 1, win 1452, length 2444
+20:32:16.656675 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 16316:16504, ack 1, win 1452, length 188
+20:32:16.656734 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 16504:16716, ack 1, win 1452, length 212
+20:32:16.656895 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 16716:17264, ack 1, win 1452, length 548
+20:32:16.657007 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 17264:17476, ack 1, win 1452, length 212
+20:32:16.657143 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 17476:17688, ack 1, win 1452, length 212
+20:32:16.657250 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 17688:17900, ack 1, win 1452, length 212
+20:32:16.657355 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 17900:18112, ack 1, win 1452, length 212
+20:32:16.657459 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 18112:18324, ack 1, win 1452, length 212
+20:32:16.657565 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 18324:18536, ack 1, win 1452, length 212
+20:32:16.657671 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 18536:18748, ack 1, win 1452, length 212
+20:32:16.657776 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 18748:18960, ack 1, win 1452, length 212
+20:32:16.657881 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 18960:19172, ack 1, win 1452, length 212
+20:32:16.657986 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 19172:19384, ack 1, win 1452, length 212
+20:32:16.658093 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 19384:19596, ack 1, win 1452, length 212
+20:32:16.658199 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 19596:19808, ack 1, win 1452, length 212
+20:32:16.658308 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 19808:20020, ack 1, win 1452, length 212
+20:32:16.663144 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 8072, win 4115, length 0
+20:32:16.663204 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 20020:20232, ack 1, win 1452, length 212
+20:32:16.663244 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 9476, win 4117, length 0
+20:32:16.663267 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 10952, win 4117, length 0
+20:32:16.663539 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 20232:20900, ack 1, win 1452, length 668
+20:32:16.663697 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 20900:21112, ack 1, win 1452, length 212
+20:32:16.663815 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 21112:21324, ack 1, win 1452, length 212
+20:32:16.663925 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 21324:21536, ack 1, win 1452, length 212
+20:32:16.664033 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 21536:21748, ack 1, win 1452, length 212
+20:32:16.664226 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 21748:21960, ack 1, win 1452, length 212
+20:32:16.664363 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 21960:22172, ack 1, win 1452, length 212
+20:32:16.664475 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 22172:22384, ack 1, win 1452, length 212
+20:32:16.664624 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 22384:22596, ack 1, win 1452, length 212
+20:32:16.664738 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 22596:22808, ack 1, win 1452, length 212
+20:32:16.664843 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 22808:23020, ack 1, win 1452, length 212
+20:32:16.664951 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 23020:23232, ack 1, win 1452, length 212
+20:32:16.665094 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 23232:23444, ack 1, win 1452, length 212
+20:32:16.665243 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 23444:23656, ack 1, win 1452, length 212
+20:32:16.665377 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 23656:23868, ack 1, win 1452, length 212
+20:32:16.665501 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 23868:24080, ack 1, win 1452, length 212
+20:32:16.665619 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 24080:24292, ack 1, win 1452, length 212
+20:32:16.665727 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 24292:24504, ack 1, win 1452, length 212
+20:32:16.665832 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 24504:24716, ack 1, win 1452, length 212
+20:32:16.665939 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 24716:24928, ack 1, win 1452, length 212
+20:32:16.666099 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 24928:25140, ack 1, win 1452, length 212
+20:32:16.666233 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 25140:25352, ack 1, win 1452, length 212
+20:32:16.666342 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 25352:25564, ack 1, win 1452, length 212
+20:32:16.666457 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 25564:25776, ack 1, win 1452, length 212
+20:32:16.666594 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 25776:25988, ack 1, win 1452, length 212
+20:32:16.666705 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 25988:26200, ack 1, win 1452, length 212
+20:32:16.666826 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 26200:26412, ack 1, win 1452, length 212
+20:32:16.666938 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 26412:26624, ack 1, win 1452, length 212
+20:32:16.672684 IP 95.179.140.193.vultr.com.40660 > lamp-s-1vcpu-1gb-tor1-01.34481: Flags [SEW], seq 1307487561, win 29200, options [mss 1460,sackOK,TS val 224935432 ecr 0,nop,wscale 7], length 0
+20:32:16.672837 IP 95.179.140.193.vultr.com.50932 > lamp-s-1vcpu-1gb-tor1-01.41789: Flags [S], seq 1775801180, win 29200, options [mss 1460,sackOK,TS val 224935439 ecr 0,nop,wscale 7], length 0
+20:32:16.673210 IP 95.179.140.193.vultr.com.40246 > lamp-s-1vcpu-1gb-tor1-01.7843: Flags [S], seq 575431574, win 29200, options [mss 1460,sackOK,TS val 224935439 ecr 0,nop,wscale 7], length 0
+20:32:16.674279 IP 95.179.140.193.vultr.com.51760 > lamp-s-1vcpu-1gb-tor1-01.14473: Flags [S], seq 2761223882, win 29200, options [mss 1460,sackOK,TS val 224935440 ecr 0,nop,wscale 7], length 0
+20:32:16.675107 IP 95.179.140.193.vultr.com.46624 > lamp-s-1vcpu-1gb-tor1-01.51805: Flags [S], seq 302009045, win 29200, options [mss 1460,sackOK,TS val 224935441 ecr 0,nop,wscale 7], length 0
+20:32:16.675669 IP 95.179.140.193.vultr.com.34866 > lamp-s-1vcpu-1gb-tor1-01.43564: Flags [S], seq 1333191182, win 29200, options [mss 1460,sackOK,TS val 224935441 ecr 0,nop,wscale 7], length 0
+20:32:16.675686 IP 95.179.140.193.vultr.com.45612 > lamp-s-1vcpu-1gb-tor1-01.36694: Flags [S], seq 4054310939, win 29200, options [mss 1460,sackOK,TS val 224935441 ecr 0,nop,wscale 7], length 0
+20:32:16.677406 IP 95.179.140.193.vultr.com.40616 > lamp-s-1vcpu-1gb-tor1-01.26813: Flags [S], seq 1437472319, win 29200, options [mss 1460,sackOK,TS val 224935440 ecr 0,nop,wscale 7], length 0
+20:32:16.678510 IP 95.179.140.193.vultr.com.41724 > lamp-s-1vcpu-1gb-tor1-01.8739: Flags [S], seq 2374356600, win 29200, options [mss 1460,sackOK,TS val 224935439 ecr 0,nop,wscale 7], length 0
+20:32:16.678857 IP 95.179.140.193.vultr.com.60730 > lamp-s-1vcpu-1gb-tor1-01.45313: Flags [S], seq 4263092045, win 29200, options [mss 1460,sackOK,TS val 224935442 ecr 0,nop,wscale 7], length 0
+20:32:16.681108 IP 95.179.140.193.vultr.com.34262 > lamp-s-1vcpu-1gb-tor1-01.2569: Flags [SEW], seq 2149233904, win 29200, options [mss 1460,sackOK,TS val 224935447 ecr 0,nop,wscale 7], length 0
+20:32:16.681146 IP 95.179.140.193.vultr.com.56826 > lamp-s-1vcpu-1gb-tor1-01.24879: Flags [SEW], seq 1845766663, win 29200, options [mss 1460,sackOK,TS val 224935441 ecr 0,nop,wscale 7], length 0
+20:32:16.681521 IP 95.179.140.193.vultr.com.43168 > lamp-s-1vcpu-1gb-tor1-01.16787: Flags [S], seq 651677416, win 29200, options [mss 1460,sackOK,TS val 224935442 ecr 0,nop,wscale 7], length 0
+20:32:16.682949 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 13872, win 4117, length 0
+20:32:16.682997 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [.], seq 26624:29544, ack 1, win 1452, length 2920
+20:32:16.683024 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 20020, win 4117, length 0
+20:32:16.683051 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 29544:29740, ack 1, win 1452, length 196
+20:32:16.683057 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 21748, win 4117, length 0
+20:32:16.683067 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 23868, win 4117, length 0
+20:32:16.683085 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 24716, win 4114, length 0
+20:32:16.683360 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 29740:30896, ack 37, win 1452, length 1156
+20:32:16.683469 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 30896:31108, ack 37, win 1452, length 212
+20:32:16.683565 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 31108:31320, ack 37, win 1452, length 212
+20:32:16.683659 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 31320:31532, ack 37, win 1452, length 212
+20:32:16.683751 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 31532:31744, ack 37, win 1452, length 212
+20:32:16.683846 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 31744:31956, ack 37, win 1452, length 212
+20:32:16.683938 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 31956:32168, ack 37, win 1452, length 212
+20:32:16.684029 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 32168:32380, ack 37, win 1452, length 212
+20:32:16.684120 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 32380:32592, ack 37, win 1452, length 212
+20:32:16.684212 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 32592:32804, ack 37, win 1452, length 212
+20:32:16.684304 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 32804:33016, ack 37, win 1452, length 212
+20:32:16.684396 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 33016:33228, ack 37, win 1452, length 212
+20:32:16.684486 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 33228:33440, ack 37, win 1452, length 212
+20:32:16.684616 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 33440:33652, ack 37, win 1452, length 212
+20:32:16.684715 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 33652:33864, ack 37, win 1452, length 212
+20:32:16.684806 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 33864:34076, ack 37, win 1452, length 212
+20:32:16.684896 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 34076:34288, ack 37, win 1452, length 212
+20:32:16.684987 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 34288:34500, ack 37, win 1452, length 212
+20:32:16.685107 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 34500:34712, ack 37, win 1452, length 212
+20:32:16.685205 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 34712:34924, ack 37, win 1452, length 212
+20:32:16.685302 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 34924:35136, ack 37, win 1452, length 212
+20:32:16.685398 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 35136:35348, ack 37, win 1452, length 212
+20:32:16.685501 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 35348:35560, ack 37, win 1452, length 212
+20:32:16.685612 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 35560:35772, ack 37, win 1452, length 212
+20:32:16.685711 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 35772:35984, ack 37, win 1452, length 212
+20:32:16.685802 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 35984:36196, ack 37, win 1452, length 212
+20:32:16.685897 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 36196:36408, ack 37, win 1452, length 212
+20:32:16.685991 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 36408:36620, ack 37, win 1452, length 212
+20:32:16.686089 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 36620:36832, ack 37, win 1452, length 212
+20:32:16.686182 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 36832:37044, ack 37, win 1452, length 212
+20:32:16.686280 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 37044:37256, ack 37, win 1452, length 212
+20:32:16.686374 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 37256:37468, ack 37, win 1452, length 212
+20:32:16.686472 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 37468:37680, ack 37, win 1452, length 212
+20:32:16.686567 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 37680:37892, ack 37, win 1452, length 212
+20:32:16.686669 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 37892:38104, ack 37, win 1452, length 212
+20:32:16.686762 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 38104:38316, ack 37, win 1452, length 212
+20:32:16.686857 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 38316:38528, ack 37, win 1452, length 212
+20:32:16.686950 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 38528:38740, ack 37, win 1452, length 212
+20:32:16.687047 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 38740:38952, ack 37, win 1452, length 212
+20:32:16.687141 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 38952:39164, ack 37, win 1452, length 212
+20:32:16.687239 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 39164:39376, ack 37, win 1452, length 212
+20:32:16.687332 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 39376:39588, ack 37, win 1452, length 212
+20:32:16.687430 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 39588:39800, ack 37, win 1452, length 212
+20:32:16.687525 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 39800:40012, ack 37, win 1452, length 212
+20:32:16.687629 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 40012:40224, ack 37, win 1452, length 212
+20:32:16.687722 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 40224:40436, ack 37, win 1452, length 212
+20:32:16.687817 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 40436:40648, ack 37, win 1452, length 212
+20:32:16.700287 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 28084, win 4117, length 0
+20:32:16.700356 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 40648:40860, ack 37, win 1452, length 212
+20:32:16.700635 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 40860:41224, ack 37, win 1452, length 364
+20:32:16.700777 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 41224:41436, ack 37, win 1452, length 212
+20:32:16.705790 IP 95.179.140.193.vultr.com.35160 > lamp-s-1vcpu-1gb-tor1-01.42969: Flags [S], seq 872182426, win 29200, options [mss 1460,sackOK,TS val 224935472 ecr 0,nop,wscale 7], length 0
+20:32:16.705872 IP 95.179.140.193.vultr.com.49848 > lamp-s-1vcpu-1gb-tor1-01.47615: Flags [S], seq 676393886, win 29200, options [mss 1460,sackOK,TS val 224935472 ecr 0,nop,wscale 7], length 0
+20:32:16.707832 IP 95.179.140.193.vultr.com.51744 > lamp-s-1vcpu-1gb-tor1-01.18932: Flags [S], seq 2093878203, win 29200, options [mss 1460,sackOK,TS val 224935474 ecr 0,nop,wscale 7], length 0
+20:32:16.707911 IP 95.179.140.193.vultr.com.57466 > lamp-s-1vcpu-1gb-tor1-01.13083: Flags [S], seq 2415887379, win 29200, options [mss 1460,sackOK,TS val 224935474 ecr 0,nop,wscale 7], length 0
+20:32:16.708220 IP 95.179.140.193.vultr.com.39732 > lamp-s-1vcpu-1gb-tor1-01.19926: Flags [S], seq 4118219508, win 29200, options [mss 1460,sackOK,TS val 224935474 ecr 0,nop,wscale 7], length 0
+20:32:16.709218 IP 95.179.140.193.vultr.com.40968 > lamp-s-1vcpu-1gb-tor1-01.11699: Flags [S], seq 2932508549, win 29200, options [mss 1460,sackOK,TS val 224935474 ecr 0,nop,wscale 7], length 0
+20:32:16.711309 IP 95.179.140.193.vultr.com.59194 > lamp-s-1vcpu-1gb-tor1-01.11692: Flags [S], seq 4192236482, win 29200, options [mss 1460,sackOK,TS val 224935471 ecr 0,nop,wscale 7], length 0
+20:32:16.711544 IP 95.179.140.193.vultr.com.35642 > lamp-s-1vcpu-1gb-tor1-01.53654: Flags [S], seq 3386895536, win 29200, options [mss 1460,sackOK,TS val 224935471 ecr 0,nop,wscale 7], length 0
+20:32:16.714604 IP 95.179.140.193.vultr.com.43672 > lamp-s-1vcpu-1gb-tor1-01.57606: Flags [S], seq 3288101872, win 29200, options [mss 1460,sackOK,TS val 224935474 ecr 0,nop,wscale 7], length 0
+20:32:16.724017 IP ams1-testnet-explorer-001.lisk.io.35070 > lamp-s-1vcpu-1gb-tor1-01.24339: Flags [S], seq 3945195825, win 64240, options [mss 1460,sackOK,TS val 3538449499 ecr 0,nop,wscale 7], length 0
+20:32:16.733927 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 33228, win 4117, length 0
+20:32:16.733990 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 41436:43928, ack 37, win 1452, length 2492
+20:32:16.734229 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 43928:44292, ack 37, win 1452, length 364
+20:32:16.734378 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 44292:44504, ack 37, win 1452, length 212
+20:32:16.734501 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 44504:44716, ack 37, win 1452, length 212
+20:32:16.734615 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 44716:44928, ack 37, win 1452, length 212
+20:32:16.734726 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 44928:45140, ack 37, win 1452, length 212
+20:32:16.734834 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 45140:45352, ack 37, win 1452, length 212
+20:32:16.734941 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 45352:45564, ack 37, win 1452, length 212
+20:32:16.735064 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 45564:45776, ack 37, win 1452, length 212
+20:32:16.735177 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 45776:45988, ack 37, win 1452, length 212
+20:32:16.735289 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 45988:46200, ack 37, win 1452, length 212
+20:32:16.735396 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 46200:46412, ack 37, win 1452, length 212
+20:32:16.735514 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 46412:46624, ack 37, win 1452, length 212
+20:32:16.736677 IP 95.179.140.193.vultr.com.32914 > lamp-s-1vcpu-1gb-tor1-01.54686: Flags [S], seq 2209783323, win 29200, options [mss 1460,sackOK,TS val 224935503 ecr 0,nop,wscale 7], length 0
+20:32:16.737259 IP 95.179.140.193.vultr.com.33862 > lamp-s-1vcpu-1gb-tor1-01.54752: Flags [S], seq 1631691353, win 29200, options [mss 1460,sackOK,TS val 224935503 ecr 0,nop,wscale 7], length 0
+20:32:16.738194 IP 95.179.140.193.vultr.com.55076 > lamp-s-1vcpu-1gb-tor1-01.53041: Flags [S], seq 2027137487, win 29200, options [mss 1460,sackOK,TS val 224935504 ecr 0,nop,wscale 7], length 0
+20:32:16.738297 IP 95.179.140.193.vultr.com.52186 > lamp-s-1vcpu-1gb-tor1-01.61210: Flags [S], seq 1547151368, win 29200, options [mss 1460,sackOK,TS val 224935504 ecr 0,nop,wscale 7], length 0
+20:32:16.738469 IP 95.179.140.193.vultr.com.49598 > lamp-s-1vcpu-1gb-tor1-01.50436: Flags [S], seq 317737012, win 29200, options [mss 1460,sackOK,TS val 224935505 ecr 0,nop,wscale 7], length 0
+20:32:16.738883 IP 95.179.140.193.vultr.com.44502 > lamp-s-1vcpu-1gb-tor1-01.18925: Flags [S], seq 546466283, win 29200, options [mss 1460,sackOK,TS val 224935505 ecr 0,nop,wscale 7], length 0
+20:32:16.740452 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 40224, win 4117, length 0
+20:32:16.740538 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 46624:48192, ack 37, win 1452, length 1568
+20:32:16.740595 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 41436, win 4112, length 0
+20:32:16.740745 IP 95.179.140.193.vultr.com.37856 > lamp-s-1vcpu-1gb-tor1-01.14868: Flags [S], seq 642479316, win 29200, options [mss 1460,sackOK,TS val 224935504 ecr 0,nop,wscale 7], length 0
+20:32:16.740977 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 48192:48908, ack 37, win 1452, length 716
+20:32:16.741190 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 48908:49120, ack 37, win 1452, length 212
+20:32:16.741322 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 49120:49332, ack 37, win 1452, length 212
+20:32:16.741437 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 49332:49544, ack 37, win 1452, length 212
+20:32:16.741592 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 49544:49756, ack 37, win 1452, length 212
+20:32:16.741708 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 49756:49968, ack 37, win 1452, length 212
+20:32:16.741818 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 49968:50180, ack 37, win 1452, length 212
+20:32:16.741925 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 50180:50392, ack 37, win 1452, length 212
+20:32:16.742032 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 50392:50604, ack 37, win 1452, length 212
+20:32:16.742185 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 50604:50816, ack 37, win 1452, length 212
+20:32:16.742329 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 50816:51028, ack 37, win 1452, length 212
+20:32:16.742503 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 51028:51240, ack 37, win 1452, length 212
+20:32:16.742666 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 51240:51452, ack 37, win 1452, length 212
+20:32:16.742780 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 51452:51664, ack 37, win 1452, length 212
+20:32:16.742885 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 51664:51876, ack 37, win 1452, length 212
+20:32:16.742989 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 51876:52088, ack 37, win 1452, length 212
+20:32:16.743161 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 52088:52300, ack 37, win 1452, length 212
+20:32:16.743306 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 52300:52512, ack 37, win 1452, length 212
+20:32:16.743412 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 52512:52724, ack 37, win 1452, length 212
+20:32:16.743517 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 52724:52936, ack 37, win 1452, length 212
+20:32:16.743622 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 52936:53148, ack 37, win 1452, length 212
+20:32:16.743725 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 53148:53360, ack 37, win 1452, length 212
+20:32:16.743827 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 53360:53572, ack 37, win 1452, length 212
+20:32:16.743930 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 53572:53784, ack 37, win 1452, length 212
+20:32:16.744034 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 53784:53996, ack 37, win 1452, length 212
+20:32:16.744139 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 53996:54208, ack 37, win 1452, length 212
+20:32:16.744242 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 54208:54420, ack 37, win 1452, length 212
+20:32:16.744345 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 54420:54632, ack 37, win 1452, length 212
+20:32:16.744371 IP 95.179.140.193.vultr.com.44328 > lamp-s-1vcpu-1gb-tor1-01.51843: Flags [S], seq 4053808515, win 29200, options [mss 1460,sackOK,TS val 224935503 ecr 0,nop,wscale 7], length 0
+20:32:16.744521 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 54632:55036, ack 37, win 1452, length 404
+20:32:16.744678 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 55036:55248, ack 37, win 1452, length 212
+20:32:16.744793 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 55248:55460, ack 37, win 1452, length 212
+20:32:16.744897 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 55460:55672, ack 37, win 1452, length 212
+20:32:16.745012 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 55672:55884, ack 37, win 1452, length 212
+20:32:16.745487 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 55884:56096, ack 37, win 1452, length 212
+20:32:16.745639 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 56096:56308, ack 37, win 1452, length 212
+20:32:16.745860 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 56308:56520, ack 37, win 1452, length 212
+20:32:16.746081 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 56520:56732, ack 37, win 1452, length 212
+20:32:16.746277 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 56732:56944, ack 37, win 1452, length 212
+20:32:16.748526 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 44928, win 4117, length 0
+20:32:16.748614 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 56944:57156, ack 37, win 1452, length 212
+20:32:16.748848 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 57156:57520, ack 37, win 1452, length 364
+20:32:16.748986 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 57520:57732, ack 37, win 1452, length 212
+20:32:16.749193 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 57732:57944, ack 37, win 1452, length 212
+20:32:16.749338 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 57944:58156, ack 37, win 1452, length 212
+20:32:16.749451 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 58156:58368, ack 37, win 1452, length 212
+20:32:16.754451 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 46624, win 4117, length 0
+20:32:16.754506 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 58368:58580, ack 37, win 1452, length 212
+20:32:16.754770 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 58580:58944, ack 37, win 1452, length 364
+20:32:16.754925 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 58944:59156, ack 37, win 1452, length 212
+20:32:16.755047 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 59156:59368, ack 37, win 1452, length 212
+20:32:16.755153 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 59368:59580, ack 37, win 1452, length 212
+20:32:16.755257 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 59580:59792, ack 37, win 1452, length 212
+20:32:16.755359 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 59792:60004, ack 37, win 1452, length 212
+20:32:16.755462 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 60004:60216, ack 37, win 1452, length 212
+20:32:16.755565 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 60216:60428, ack 37, win 1452, length 212
+20:32:16.764067 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 51664, win 4117, length 0
+20:32:16.764117 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 60428:60640, ack 37, win 1452, length 212
+20:32:16.764143 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 52300, win 4115, length 0
+20:32:16.764159 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 56944, win 4117, length 0
+20:32:16.764186 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 57520, win 4115, length 0
+20:32:16.764197 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 58156, win 4112, length 0
+20:32:16.764459 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 60640:61628, ack 37, win 1452, length 988
+20:32:16.764630 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 61628:61840, ack 37, win 1452, length 212
+20:32:16.764746 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 61840:62052, ack 37, win 1452, length 212
+20:32:16.764872 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 62052:62264, ack 37, win 1452, length 212
+20:32:16.764985 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 62264:62476, ack 37, win 1452, length 212
+20:32:16.765135 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 62476:62688, ack 37, win 1452, length 212
+20:32:16.765246 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 62688:62900, ack 37, win 1452, length 212
+20:32:16.765364 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 62900:63112, ack 37, win 1452, length 212
+20:32:16.765505 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 63112:63324, ack 37, win 1452, length 212
+20:32:16.765624 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 63324:63536, ack 37, win 1452, length 212
+20:32:16.765731 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 63536:63748, ack 37, win 1452, length 212
+20:32:16.765835 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 63748:63960, ack 37, win 1452, length 212
+20:32:16.765968 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 63960:64172, ack 37, win 1452, length 212
+20:32:16.766077 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 64172:64384, ack 37, win 1452, length 212
+20:32:16.766188 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 64384:64596, ack 37, win 1452, length 212
+20:32:16.766292 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 64596:64808, ack 37, win 1452, length 212
+20:32:16.766396 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 64808:65020, ack 37, win 1452, length 212
+20:32:16.766499 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 65020:65232, ack 37, win 1452, length 212
+20:32:16.766619 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 65232:65444, ack 37, win 1452, length 212
+20:32:16.766730 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 65444:65656, ack 37, win 1452, length 212
+20:32:16.766833 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 65656:65868, ack 37, win 1452, length 212
+20:32:16.766950 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 65868:66080, ack 37, win 1452, length 212
+20:32:16.767061 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 66080:66292, ack 37, win 1452, length 212
+20:32:16.767167 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 66292:66504, ack 37, win 1452, length 212
+20:32:16.767285 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 66504:66716, ack 37, win 1452, length 212
+20:32:16.767397 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 66716:66928, ack 37, win 1452, length 212
+20:32:16.767544 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 66928:67140, ack 37, win 1452, length 212
+20:32:16.767673 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 67140:67352, ack 37, win 1452, length 212
+20:32:16.767804 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 67352:67564, ack 37, win 1452, length 212
+20:32:16.767919 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 67564:67776, ack 37, win 1452, length 212
+20:32:16.768025 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 67776:67988, ack 37, win 1452, length 212
+20:32:16.768129 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 67988:68200, ack 37, win 1452, length 212
+20:32:16.768268 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 68200:68412, ack 37, win 1452, length 212
+20:32:16.768377 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 68412:68624, ack 37, win 1452, length 212
+20:32:16.768499 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 68624:68836, ack 37, win 1452, length 212
+20:32:16.768646 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 68836:69048, ack 37, win 1452, length 212
+20:32:16.768680 IP 95.179.140.193.vultr.com.49140 > lamp-s-1vcpu-1gb-tor1-01.10023: Flags [S], seq 70948299, win 29200, options [mss 1460,sackOK,TS val 224935535 ecr 0,nop,wscale 7], length 0
+20:32:16.768861 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 69048:69452, ack 37, win 1452, length 404
+20:32:16.768928 IP 95.179.140.193.vultr.com.38680 > lamp-s-1vcpu-1gb-tor1-01.30503: Flags [S], seq 2123786401, win 29200, options [mss 1460,sackOK,TS val 224935535 ecr 0,nop,wscale 7], length 0
+20:32:16.769090 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 69452:69856, ack 37, win 1452, length 404
+20:32:16.769245 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 69856:70068, ack 37, win 1452, length 212
+20:32:16.769280 IP 95.179.140.193.vultr.com.44622 > lamp-s-1vcpu-1gb-tor1-01.15878: Flags [S], seq 1679458557, win 29200, options [mss 1460,sackOK,TS val 224935535 ecr 0,nop,wscale 7], length 0
+20:32:16.769296 IP 95.179.140.193.vultr.com.50566 > lamp-s-1vcpu-1gb-tor1-01.45309: Flags [S], seq 297979752, win 29200, options [mss 1460,sackOK,TS val 224935535 ecr 0,nop,wscale 7], length 0
+20:32:16.769419 IP 95.179.140.193.vultr.com.58100 > lamp-s-1vcpu-1gb-tor1-01.39780: Flags [S], seq 3952904585, win 29200, options [mss 1460,sackOK,TS val 224935535 ecr 0,nop,wscale 7], length 0
+20:32:16.769941 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 70068:70864, ack 37, win 1452, length 796
+20:32:16.770102 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 70864:71076, ack 37, win 1452, length 212
+20:32:16.770121 IP 95.179.140.193.vultr.com.54302 > lamp-s-1vcpu-1gb-tor1-01.8082: Flags [S], seq 3497753937, win 29200, options [mss 1460,sackOK,TS val 224935535 ecr 0,nop,wscale 7], length 0
+20:32:16.770288 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 71076:71480, ack 37, win 1452, length 404
+20:32:16.770406 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 71480:71692, ack 37, win 1452, length 212
+20:32:16.770534 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 71692:71904, ack 37, win 1452, length 212
+20:32:16.770662 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 71904:72116, ack 37, win 1452, length 212
+20:32:16.770775 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 72116:72328, ack 37, win 1452, length 212
+20:32:16.773568 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 58368, win 4112, length 0
+20:32:16.773609 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 72328:72540, ack 37, win 1452, length 212
+20:32:16.773635 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 60428, win 4117, length 0
+20:32:16.773651 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 61628, win 4112, length 0
+20:32:16.773660 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 63536, win 4117, length 0
+20:32:16.773923 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 72540:73368, ack 37, win 1452, length 828
+20:32:16.774051 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 73368:73580, ack 37, win 1452, length 212
+20:32:16.774165 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 73580:73792, ack 37, win 1452, length 212
+20:32:16.774274 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 73792:74004, ack 37, win 1452, length 212
+20:32:16.774379 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 74004:74216, ack 37, win 1452, length 212
+20:32:16.774491 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 74216:74428, ack 37, win 1452, length 212
+20:32:16.774597 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 74428:74640, ack 37, win 1452, length 212
+20:32:16.774701 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 74640:74852, ack 37, win 1452, length 212
+20:32:16.774749 IP 95.179.140.193.vultr.com.53384 > lamp-s-1vcpu-1gb-tor1-01.58978: Flags [S], seq 1499613141, win 29200, options [mss 1460,sackOK,TS val 224935535 ecr 0,nop,wscale 7], length 0
+20:32:16.774895 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 74852:75256, ack 37, win 1452, length 404
+20:32:16.775015 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 75256:75468, ack 37, win 1452, length 212
+20:32:16.775121 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 75468:75680, ack 37, win 1452, length 212
+20:32:16.775226 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 75680:75892, ack 37, win 1452, length 212
+20:32:16.775331 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 75892:76104, ack 37, win 1452, length 212
+20:32:16.775435 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 76104:76316, ack 37, win 1452, length 212
+20:32:16.775540 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 76316:76528, ack 37, win 1452, length 212
+20:32:16.775644 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 76528:76740, ack 37, win 1452, length 212
+20:32:16.775748 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 76740:76952, ack 37, win 1452, length 212
+20:32:16.775851 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 76952:77164, ack 37, win 1452, length 212
+20:32:16.775957 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 77164:77376, ack 37, win 1452, length 212
+20:32:16.776080 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 77376:77588, ack 37, win 1452, length 212
+20:32:16.776282 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 77588:77800, ack 37, win 1452, length 212
+20:32:16.781538 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 66716, win 4117, length 0
+20:32:16.781602 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 77800:78012, ack 37, win 1452, length 212
+20:32:16.781826 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 78012:78376, ack 37, win 1452, length 364
+20:32:16.781960 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 78376:78588, ack 37, win 1452, length 212
+20:32:16.782085 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 78588:78800, ack 37, win 1452, length 212
+20:32:16.782252 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 78800:79012, ack 37, win 1452, length 212
+20:32:16.782420 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 79012:79224, ack 37, win 1452, length 212
+20:32:16.782605 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 79224:79436, ack 37, win 1452, length 212
+20:32:16.782771 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 79436:79648, ack 37, win 1452, length 212
+20:32:16.782943 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 79648:79860, ack 37, win 1452, length 212
+20:32:16.783106 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 79860:80072, ack 37, win 1452, length 212
+20:32:16.783279 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 80072:80284, ack 37, win 1452, length 212
+20:32:16.783443 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 80284:80496, ack 37, win 1452, length 212
+20:32:16.783607 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 80496:80708, ack 37, win 1452, length 212
+20:32:16.783766 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 80708:80920, ack 37, win 1452, length 212
+20:32:16.783927 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 80920:81132, ack 37, win 1452, length 212
+20:32:16.784111 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 81132:81344, ack 37, win 1452, length 212
+20:32:16.789415 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 68624, win 4117, length 0
+20:32:16.789476 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 81344:81556, ack 37, win 1452, length 212
+20:32:16.789508 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 69856, win 4112, length 0
+20:32:16.789526 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 70864, win 4117, length 0
+20:32:16.789908 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 81556:82232, ack 37, win 1452, length 676
+20:32:16.790096 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 82232:82444, ack 37, win 1452, length 212
+20:32:16.790271 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 82444:82656, ack 37, win 1452, length 212
+20:32:16.790440 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 82656:82868, ack 37, win 1452, length 212
+20:32:16.790602 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 82868:83080, ack 37, win 1452, length 212
+20:32:16.790764 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 83080:83292, ack 37, win 1452, length 212
+20:32:16.790928 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 83292:83504, ack 37, win 1452, length 212
+20:32:16.791088 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 83504:83716, ack 37, win 1452, length 212
+20:32:16.791251 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 83716:83928, ack 37, win 1452, length 212
+20:32:16.791426 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 83928:84140, ack 37, win 1452, length 212
+20:32:16.791585 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 84140:84352, ack 37, win 1452, length 212
+20:32:16.791744 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 84352:84564, ack 37, win 1452, length 212
+20:32:16.791900 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 84564:84776, ack 37, win 1452, length 212
+20:32:16.792081 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 84776:84988, ack 37, win 1452, length 212
+20:32:16.792243 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 84988:85200, ack 37, win 1452, length 212
+20:32:16.806817 IP 95.179.140.193.vultr.com.59300 > lamp-s-1vcpu-1gb-tor1-01.25160: Flags [S], seq 2533204869, win 29200, options [mss 1460,sackOK,TS val 224935567 ecr 0,nop,wscale 7], length 0
+20:32:16.833553 IP 95.179.140.193.vultr.com.51084 > lamp-s-1vcpu-1gb-tor1-01.4267: Flags [S], seq 481197000, win 29200, options [mss 1460,sackOK,TS val 224935600 ecr 0,nop,wscale 7], length 0
+20:32:16.833707 IP 95.179.140.193.vultr.com.46654 > lamp-s-1vcpu-1gb-tor1-01.27061: Flags [S], seq 726652300, win 29200, options [mss 1460,sackOK,TS val 224935600 ecr 0,nop,wscale 7], length 0
+20:32:16.833933 IP 95.179.140.193.vultr.com.43318 > lamp-s-1vcpu-1gb-tor1-01.13081: Flags [S], seq 738800579, win 29200, options [mss 1460,sackOK,TS val 224935599 ecr 0,nop,wscale 7], length 0
+20:32:16.834244 IP 95.179.140.193.vultr.com.54314 > lamp-s-1vcpu-1gb-tor1-01.30410: Flags [S], seq 4120229256, win 29200, options [mss 1460,sackOK,TS val 224935600 ecr 0,nop,wscale 7], length 0
+20:32:16.834408 IP 95.179.140.193.vultr.com.55282 > lamp-s-1vcpu-1gb-tor1-01.15314: Flags [S], seq 3944185987, win 29200, options [mss 1460,sackOK,TS val 224935600 ecr 0,nop,wscale 7], length 0
+20:32:16.834917 IP 95.179.140.193.vultr.com.42416 > lamp-s-1vcpu-1gb-tor1-01.53271: Flags [S], seq 4124216297, win 29200, options [mss 1460,sackOK,TS val 224935601 ecr 0,nop,wscale 7], length 0
+20:32:16.834945 IP 95.179.140.193.vultr.com.36854 > lamp-s-1vcpu-1gb-tor1-01.53433: Flags [S], seq 1991553129, win 29200, options [mss 1460,sackOK,TS val 224935601 ecr 0,nop,wscale 7], length 0
+20:32:16.835348 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 72328, win 4117, length 0
+20:32:16.835401 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 85200:87204, ack 37, win 1452, length 2004
+20:32:16.835431 IP 95.179.140.193.vultr.com.45776 > lamp-s-1vcpu-1gb-tor1-01.43562: Flags [S], seq 1579467074, win 29200, options [mss 1460,sackOK,TS val 224935601 ecr 0,nop,wscale 7], length 0
+20:32:16.835703 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 87204:87768, ack 37, win 1452, length 564
+20:32:16.835873 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 87768:87980, ack 37, win 1452, length 212
+20:32:16.836030 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 87980:88192, ack 37, win 1452, length 212
+20:32:16.836192 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 88192:88404, ack 37, win 1452, length 212
+20:32:16.838730 IP 95.179.140.193.vultr.com.57858 > lamp-s-1vcpu-1gb-tor1-01.7841: Flags [S], seq 2076500669, win 29200, options [mss 1460,sackOK,TS val 224935601 ecr 0,nop,wscale 7], length 0
+20:32:16.838829 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 74852, win 4117, length 0
+20:32:16.838864 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 88404:88616, ack 37, win 1452, length 212
+20:32:16.838885 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 77800, win 4117, length 0
+20:32:16.839071 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 88616:89332, ack 37, win 1452, length 716
+20:32:16.839264 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 89332:89544, ack 37, win 1452, length 212
+20:32:16.839396 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 89544:89756, ack 37, win 1452, length 212
+20:32:16.839505 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 89756:89968, ack 37, win 1452, length 212
+20:32:16.839611 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 89968:90180, ack 37, win 1452, length 212
+20:32:16.839715 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 90180:90392, ack 37, win 1452, length 212
+20:32:16.839850 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 90392:90604, ack 37, win 1452, length 212
+20:32:16.839967 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 90604:90816, ack 37, win 1452, length 212
+20:32:16.840072 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 90816:91028, ack 37, win 1452, length 212
+20:32:16.840174 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 91028:91240, ack 37, win 1452, length 212
+20:32:16.840237 IP 95.179.140.193.vultr.com.59996 > lamp-s-1vcpu-1gb-tor1-01.45889: Flags [S], seq 1786888781, win 29200, options [mss 1460,sackOK,TS val 224935600 ecr 0,nop,wscale 7], length 0
+20:32:16.840366 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 91240:91644, ack 37, win 1452, length 404
+20:32:16.840480 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 91644:91856, ack 37, win 1452, length 212
+20:32:16.840631 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 91856:92068, ack 37, win 1452, length 212
+20:32:16.840744 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 92068:92280, ack 37, win 1452, length 212
+20:32:16.840848 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 92280:92492, ack 37, win 1452, length 212
+20:32:16.840952 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 92492:92704, ack 37, win 1452, length 212
+20:32:16.841117 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 92704:92916, ack 37, win 1452, length 212
+20:32:16.841277 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 92916:93128, ack 37, win 1452, length 212
+20:32:16.841391 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 93128:93340, ack 37, win 1452, length 212
+20:32:16.841519 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 93340:93552, ack 37, win 1452, length 212
+20:32:16.841646 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 93552:93764, ack 37, win 1452, length 212
+20:32:16.841750 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 93764:93976, ack 37, win 1452, length 212
+20:32:16.864789 IP 95.179.140.193.vultr.com.58960 > lamp-s-1vcpu-1gb-tor1-01.41159: Flags [S], seq 3749925784, win 29200, options [mss 1460,sackOK,TS val 224935631 ecr 0,nop,wscale 7], length 0
+20:32:16.864905 IP 95.179.140.193.vultr.com.42724 > lamp-s-1vcpu-1gb-tor1-01.7838: Flags [S], seq 850007646, win 29200, options [mss 1460,sackOK,TS val 224935631 ecr 0,nop,wscale 7], length 0
+20:32:16.865676 IP 95.179.140.193.vultr.com.58938 > lamp-s-1vcpu-1gb-tor1-01.38942: Flags [S], seq 3861770641, win 29200, options [mss 1460,sackOK,TS val 224935632 ecr 0,nop,wscale 7], length 0
+20:32:16.865711 IP 95.179.140.193.vultr.com.55732 > lamp-s-1vcpu-1gb-tor1-01.24339: Flags [S], seq 3009840915, win 29200, options [mss 1460,sackOK,TS val 224935631 ecr 0,nop,wscale 7], length 0
+20:32:16.871107 IP 95.179.140.193.vultr.com.54556 > lamp-s-1vcpu-1gb-tor1-01.44308: Flags [S], seq 767144642, win 29200, options [mss 1460,sackOK,TS val 224935631 ecr 0,nop,wscale 7], length 0
+20:32:16.871759 IP 95.179.140.193.vultr.com.43182 > lamp-s-1vcpu-1gb-tor1-01.52301: Flags [S], seq 2094822661, win 29200, options [mss 1460,sackOK,TS val 224935632 ecr 0,nop,wscale 7], length 0
+20:32:16.882648 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 80284, win 4117, length 0
+20:32:16.882715 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 93976:95508, ack 37, win 1452, length 1532
+20:32:16.882952 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 95508:95872, ack 37, win 1452, length 364
+20:32:16.883081 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 95872:96084, ack 37, win 1452, length 212
+20:32:16.883196 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 96084:96296, ack 37, win 1452, length 212
+20:32:16.883309 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 96296:96508, ack 37, win 1452, length 212
+20:32:16.883581 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 96508:96720, ack 37, win 1452, length 212
+20:32:16.883708 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 96720:96932, ack 37, win 1452, length 212
+20:32:16.883821 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 96932:97144, ack 37, win 1452, length 212
+20:32:16.883926 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 97144:97356, ack 37, win 1452, length 212
+20:32:16.884056 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 97356:97568, ack 37, win 1452, length 212
+20:32:16.884236 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 97568:97780, ack 37, win 1452, length 212
+20:32:16.898457 IP 95.179.140.193.vultr.com.59658 > lamp-s-1vcpu-1gb-tor1-01.42594: Flags [S], seq 3068437568, win 29200, options [mss 1460,sackOK,TS val 224935663 ecr 0,nop,wscale 7], length 0
+20:32:16.898607 IP 95.179.140.193.vultr.com.43550 > lamp-s-1vcpu-1gb-tor1-01.23341: Flags [S], seq 3476191853, win 29200, options [mss 1460,sackOK,TS val 224935664 ecr 0,nop,wscale 7], length 0
+20:32:16.929707 IP 95.179.140.193.vultr.com.51502 > lamp-s-1vcpu-1gb-tor1-01.25159: Flags [S], seq 2693658067, win 29200, options [mss 1460,sackOK,TS val 224935696 ecr 0,nop,wscale 7], length 0
+20:32:16.929809 IP 95.179.140.193.vultr.com.41598 > lamp-s-1vcpu-1gb-tor1-01.53431: Flags [S], seq 2802361687, win 29200, options [mss 1460,sackOK,TS val 224935695 ecr 0,nop,wscale 7], length 0
+20:32:16.934043 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 89968, win 4117, length 0
+20:32:16.934122 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 97780:98848, ack 37, win 1452, length 1068
+20:32:16.934155 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 92280, win 4117, length 0
+20:32:16.934178 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [P.], seq 37:73, ack 92280, win 4117, length 36
+20:32:16.934188 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 97780, win 4117, length 0
+20:32:16.934443 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 98848:99692, ack 73, win 1452, length 844
+20:32:16.934578 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 99692:99904, ack 73, win 1452, length 212
+20:32:16.934695 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 99904:100116, ack 73, win 1452, length 212
+20:32:16.934850 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 100116:100328, ack 73, win 1452, length 212
+20:32:16.934970 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 100328:100540, ack 73, win 1452, length 212
+20:32:16.935088 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 100540:100752, ack 73, win 1452, length 212
+20:32:16.935202 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 100752:100964, ack 73, win 1452, length 212
+20:32:16.935313 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 100964:101176, ack 73, win 1452, length 212
+20:32:16.935419 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 101176:101388, ack 73, win 1452, length 212
+20:32:16.935526 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 101388:101600, ack 73, win 1452, length 212
+20:32:16.935636 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 101600:101812, ack 73, win 1452, length 212
+20:32:16.935745 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 101812:102024, ack 73, win 1452, length 212
+20:32:16.935862 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 102024:102236, ack 73, win 1452, length 212
+20:32:16.935972 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 102236:102448, ack 73, win 1452, length 212
+20:32:16.936076 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 102448:102660, ack 73, win 1452, length 212
+20:32:16.936180 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 102660:102872, ack 73, win 1452, length 212
+20:32:16.936284 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 102872:103084, ack 73, win 1452, length 212
+20:32:16.936388 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 103084:103296, ack 73, win 1452, length 212
+20:32:16.936512 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 103296:103508, ack 73, win 1452, length 212
+20:32:16.936682 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 103508:103720, ack 73, win 1452, length 212
+20:32:16.936794 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 103720:103932, ack 73, win 1452, length 212
+20:32:16.936898 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 103932:104144, ack 73, win 1452, length 212
+20:32:16.937003 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 104144:104356, ack 73, win 1452, length 212
+20:32:16.937145 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 104356:104568, ack 73, win 1452, length 212
+20:32:16.937321 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 104568:104780, ack 73, win 1452, length 212
+20:32:16.937467 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 104780:104992, ack 73, win 1452, length 212
+20:32:16.937584 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 104992:105204, ack 73, win 1452, length 212
+20:32:16.937690 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 105204:105416, ack 73, win 1452, length 212
+20:32:16.937793 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 105416:105628, ack 73, win 1452, length 212
+20:32:16.937900 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 105628:105840, ack 73, win 1452, length 212
+20:32:16.938004 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 105840:106052, ack 73, win 1452, length 212
+20:32:16.938110 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 106052:106264, ack 73, win 1452, length 212
+20:32:16.938273 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 106264:106476, ack 73, win 1452, length 212
+20:32:16.938409 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 106476:106688, ack 73, win 1452, length 212
+20:32:16.938535 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 106688:106900, ack 73, win 1452, length 212
+20:32:16.938652 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 106900:107112, ack 73, win 1452, length 212
+20:32:16.938757 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 107112:107324, ack 73, win 1452, length 212
+20:32:16.938891 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 107324:107536, ack 73, win 1452, length 212
+20:32:16.939034 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 107536:107748, ack 73, win 1452, length 212
+20:32:16.939170 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 107748:107960, ack 73, win 1452, length 212
+20:32:16.939278 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 107960:108172, ack 73, win 1452, length 212
+20:32:16.939383 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 108172:108384, ack 73, win 1452, length 212
+20:32:16.939487 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 108384:108596, ack 73, win 1452, length 212
+20:32:16.939591 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 108596:108808, ack 73, win 1452, length 212
+20:32:16.939696 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 108808:109020, ack 73, win 1452, length 212
+20:32:16.939800 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 109020:109232, ack 73, win 1452, length 212
+20:32:16.939903 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 109232:109444, ack 73, win 1452, length 212
+20:32:16.940006 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 109444:109656, ack 73, win 1452, length 212
+20:32:16.940132 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 109656:109868, ack 73, win 1452, length 212
+20:32:16.940289 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 109868:110080, ack 73, win 1452, length 212
+20:32:16.940416 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 110080:110292, ack 73, win 1452, length 212
+20:32:16.940534 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 110292:110504, ack 73, win 1452, length 212
+20:32:16.940711 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 110504:110716, ack 73, win 1452, length 212
+20:32:16.940824 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 110716:110928, ack 73, win 1452, length 212
+20:32:16.940929 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 110928:111140, ack 73, win 1452, length 212
+20:32:16.941067 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 111140:111352, ack 73, win 1452, length 212
+20:32:16.941181 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 111352:111564, ack 73, win 1452, length 212
+20:32:16.941293 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 111564:111776, ack 73, win 1452, length 212
+20:32:16.941400 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 111776:111988, ack 73, win 1452, length 212
+20:32:16.941508 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 111988:112200, ack 73, win 1452, length 212
+20:32:16.941614 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 112200:112412, ack 73, win 1452, length 212
+20:32:16.941718 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 112412:112624, ack 73, win 1452, length 212
+20:32:16.941823 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 112624:112836, ack 73, win 1452, length 212
+20:32:16.941927 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 112836:113048, ack 73, win 1452, length 212
+20:32:16.958129 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 100540, win 4117, length 0
+20:32:16.958215 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 113048:113260, ack 73, win 1452, length 212
+20:32:16.958549 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 113260:113624, ack 73, win 1452, length 364
+20:32:16.958750 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 113624:113836, ack 73, win 1452, length 212
+20:32:16.958915 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 113836:114048, ack 73, win 1452, length 212
+20:32:16.959107 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 114048:114260, ack 73, win 1452, length 212
+20:32:16.959291 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 114260:114472, ack 73, win 1452, length 212
+20:32:16.960986 IP 95.179.140.193.vultr.com.60486 > lamp-s-1vcpu-1gb-tor1-01.39420: Flags [S], seq 2601447958, win 29200, options [mss 1460,sackOK,TS val 224935727 ecr 0,nop,wscale 7], length 0
+20:32:16.965249 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 101176, win 4115, length 0
+20:32:16.965301 IP lamp-s-1vcpu-1gb-tor1-01.ssh > CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494: Flags [P.], seq 114472:114920, ack 73, win 1452, length 448
+20:32:16.965329 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 104780, win 4117, length 0
+20:32:16.965352 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 106900, win 4117, length 0
+20:32:16.965366 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 108384, win 4117, length 0
+20:32:16.965377 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [P.], seq 73:109, ack 108384, win 4117, length 36
+20:32:16.965388 IP CPEf81d0fa9f3e3-CMf81d0fa9f3e0.cpe.net.cable.rogers.com.51494 > lamp-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 109656, win 4112, length 0
+^C
+547 packets captured
+597 packets received by filter
+50 packets dropped by kernel
+root@lamp-s-1vcpu-1gb-tor1-01:~#
