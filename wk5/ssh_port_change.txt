@@ -1,0 +1,9 @@
+step 6
+
+service sshd restart
+
+Step 7
+
+ssh root@165.227.37.220 -p 2222
+
+
