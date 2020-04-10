@@ -1,0 +1,3 @@
+I will use basename() to clean the query parameter. Basename will remove the / and returns the trailing component
+
+I will use file_exists() in an if statement to see if the folder is there. If it is scan the directory, else print a message

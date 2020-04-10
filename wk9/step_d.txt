@@ -1,0 +1,7 @@
+What you see on the browser (the issue)
+
+	There is nothing in the browser except an empty pre tag when viewing page source
+
+What sensitive information is given by this page
+	
+	There is no sensitive information

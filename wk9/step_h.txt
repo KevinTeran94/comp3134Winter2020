@@ -1,0 +1,1 @@
+I will mitigate the comment problem by writing the comments in php. The browser will not render the php comments.

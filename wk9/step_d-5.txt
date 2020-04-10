@@ -1,0 +1,8 @@
+What you see on the browser (the issue)
+
+	There is a pre tag with array showing the file structure of the /www/ folder in the server
+
+What sensitive information is given by this page
+	
+	File structure of the server. Attackers can use this to traverse the server and look for vulnerabilities
+	'%2e%2e%2f' translates to ../
