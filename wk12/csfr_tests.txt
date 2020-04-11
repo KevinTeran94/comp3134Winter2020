@@ -1,0 +1,2 @@
+csfr_form.php can successfully login due to the session['confirmation'] and post['confirmation] variables being the same.
+csfr.html cannot login because it does not have the post['confirmation'] variable thus it is blocked.
