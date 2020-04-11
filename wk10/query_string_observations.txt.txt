@@ -1,0 +1,9 @@
+1. I typed in "salt" and the url changed to https://www.dictionary.com/browse/salt?s=t
+
+2. the url changed to this https://www.dictionary.com/misspelling?term=asda . It's a page that returns no results
+	and give you a list of words you possibly meant to type.
+
+3. Url changed to https://www.dictionary.com/noresult?term=%3Cscript%3Ealert(%27hello%27)%3C%2Fscript%3E. Again no results
+and suggests random articles.
+
+4. https://www.dictionary.com/noresult?term=%3Cscript%3Ealert(%27hello%27)%3C/script%3E , no change in the page

@@ -1,0 +1,4 @@
+The first solution does not sanitize any input.
+
+The second solution sanitzes (somewhat) form and url input. This prevents the <script> tag from running when entered
+in the url.
